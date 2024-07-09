@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1c09dee749.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo_.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#Portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CSE UNDERGRAD</p>
+                <h1>Hi, I'm <span>Abhijeet Kumar</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------ABOUT---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/itachi_user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Pre final-year student at the Birla Institute of Technology, Mesra, majoring in Computer Science and Engineering with specialization
+                        in Artficial Intelligence and Machine Learning.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Education</p>
+                        <p class="tab-links" onclick="opentab('Education')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>BIT MESRA</span><br>College(2022-26) </li>
+                            <li><span>CHINMAYA VIDYALAYA</span><br>High School(2019-21) </li>
+                            <li><span>CENTRAL ACADEMY</span><br>Marticulation(2009-19) </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Pupil on CodeForces</span><br>Solved more than 350 problems.</li>
+                            <li><span>Cleared PRMO.</span><br> which is among around top 350 in state</li>
+                            <li><span>Secured 2nd Place .</span><br>in the biggest intercollege hackathon, Hatch From Scratch,
+                                held by IET BIT Mesra </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Hobbies">
+                        <ul>
+                            <li><span>FOOTBALL</span><br>Played U-15 National level </li>
+                            <li><span>Listening Music</span><br>Fan of KK, Linkin Park</li>
+                            <li><span>GAMING</span><br>Played COD series,Ghost of Tsushima, Elden Ring,etc</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------------------SERVICES----------------- -->
+ <div id="services">
+    <div class="container">
+    <h1 class="sub-title">My Skills & Interests</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i> <!--app icon-->
+            <h2>Web Development</h2>
+            <p>
+                <li>Html , CSS , Javascript</li>
+                <li>Node JS </li>
+                <li>React JS</li>
+                <li>Mongo DB</li>
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+            <i class="fa-solid fa-terminal"></i> <!--app icon-->
+            <h2>Languages</h2>
+            <p>
+                <li>C++</li>
+                <li>JAVA</li>
+                <li>PYTHON</li>
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+            <i class="fa-solid fa-book-open-reader"></i> <!--app icon-->
+            <h2>Interpersonal</h2>
+            <p>
+                <li>LEADERSHIP</li>
+                <li>TEAM MANAGEMENT</li>
+                <li>ORATOR</li>
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+        </div>
+    </div>
+ </div>
+ <!-- --------------------------------Projects-------------------- -->
+  <div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>PORTFOLIO</h3>
+                    <p>Created a professional portfolio website to showcase my work and skills.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>NETFLIX CLONE</h3>
+                    <p>Created a web application that allows users to explore and enjoy a wide range of movies and TV shows.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Trip-Planner WebApp</h3>
+                    <p>The app for planning trips,maintaining budget.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+<!-- --------------CONTACT--------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto:abhijeetmahto007@outlook.com"><i class="fa-solid fa-paper-plane"></i></a>abhijeetmahto007@outlook.com</p>
+                <p><i class="fa-solid fa-phone"></i>7070601***</p>
+                <div class="social-icons">
+                 <a href="https://www.instagram.com/abhijeet_mahto17/#"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="https://www.linkedin.com/in/abhijeet-kumar-b99770249/"><i class="fa-brands fa-linkedin"></i></a>   
+                 <!-- <a href="mailto:abhijeetmahto007@outlook.com">abhijeetmahto007@outlook.com</a>   -->
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Abhijeet.</p>
+    </div>
+ </div>
+
+
+
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>
